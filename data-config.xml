@@ -1,0 +1,15 @@
+<dataConfig>
+  <dataSource type="JdbcDataSource" 
+              driver="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+              url="jdbc:sqlserver://172.21.104.67:1433;database=epmdb"   
+              user="plcmuser" 
+              password="Polycom123"/>
+  <document>
+    <entity name="resourcefile"  
+      pk="resourceFileId"
+      query="select resourceFileId,fileName from t1.resourcefile">
+       <field column="resourceFileId" name="resourceFileId"/>
+       <field column="fileName" name="fileName"/>       
+    </entity>
+  </document>
+</dataConfig>
